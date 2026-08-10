@@ -1,5 +1,5 @@
 export default {
-    NAME: 'Kaetram',
+    NAME: '凯特拉姆',
     DESCRIPTION:
-        "Kaetram is an open-source game-engine created to aid those interested in entering the game development realm. The original idea is based on Little Workshop's demo game - BrowserQuest. The assets have remained the same, but the code itself has been completely wiped and redone from the ground up."
+        "凯特拉姆是一款开源游戏引擎，旨在帮助有兴趣踏入游戏开发领域的学习者。本项目创意源自 Little Workshop 的演示游戏——BrowserQuest。游戏资源素材沿用原版，但代码已经被完全移除，从零重新编写实现。"
 } as const;
