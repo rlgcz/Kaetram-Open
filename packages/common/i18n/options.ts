@@ -1,3 +1,12 @@
+import CraftingZhCN from './zh‑CN/crafting';
+import EnchantZhCN from './zh‑CN/enchant';
+import GuildsZhCN from './zh‑CN/guilds';
+import ItemZhCN from './zh‑CN/item';
+import MiscZhCN from './zh‑CN/misc';
+import ResourceZhCN from './zh‑CN/resource';
+import StoreZhCN from './zh‑CN/store';
+import GameZhCN from './zh‑CN/game';
+import WarpsZhCN from './zh‑CN/warps';
 import CraftingEn from './en/crafting';
 import EnchantEn from './en/enchant';
 import GuildsEn from './en/guilds';
@@ -159,6 +168,17 @@ export let resources = {
         store: StoreTl,
         game: GameTl,
         warps: WarpsTl
+    },
+    'zh‑CN': {
+        crafting: CraftingZhCN,
+        enchant: EnchantZhCN,
+        guilds: GuildsZhCN,
+        item: ItemZhCN,
+        misc: MiscZhCN,
+        resource: ResourceZhCN,
+        store: StoreZhCN,
+        game: GameZhCN,
+        warps: WarpsZhCN
     }
 } as const;
 
@@ -172,10 +192,11 @@ export let locales: { [K in Locale]: string } = {
     pt: 'pt-PT',
     ro: 'ro-RO',
     ru: 'ru-RU',
-    tl: 'tl-PH'
+    tl: 'tl-PH',
+   'zh‑CN': 'zh‑CN'
 } as const;
 
-export let defaultLocale = 'en' as const;
+export let defaultLocale = 'zh‑CN' as const;
 export let defaultResource = resources[defaultLocale];
 
 export let ns = Object.keys(defaultResource);
