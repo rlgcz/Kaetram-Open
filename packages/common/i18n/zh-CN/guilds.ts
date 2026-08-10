@@ -1,12 +1,12 @@
 export default {
-    ALREADY_EXISTS: 'A guild with that name already exists.',
-    ALREADY_IN_GUILD: 'You are already in a guild.',
-    CANNOT_KICK_YOURSELF: 'You cannot kick yourself from the guild.',
-    GUILD_FULL: 'This guild is at maximum capacity.',
-    MUST_FINISH_TUTORIAL_CREATE: 'You must finish the tutorial before creating a guild.',
-    NO_PERMISSION: 'You do not have permission to do that.',
-    NO_PERMISSION_RANK: 'You do not have permission to update the rank of that member.',
-    NOT_ENOUGH_GOLD: 'You need 30,000 gold in your inventory to create a guild.',
-    NOT_ALLOWED_GUESTS_JOIN: 'Guests are not allowed to join guilds.',
-    NOT_ALLOWED_GUESTS_CREATE: 'Guests are not allowed to create guilds.'
+    ALREADY_EXISTS: '已存在该名称的公会。',
+    ALREADY_IN_GUILD: '你已经加入了一个公会。',
+    CANNOT_KICK_YOURSELF: '你不能将自己踢出公会。',
+    GUILD_FULL: '该公会人数已达上限。',
+    MUST_FINISH_TUTORIAL_CREATE: '需要完成新手教程，才可以创建公会。',
+    NO_PERMISSION: '你没有执行该操作的权限。',
+    NO_PERMISSION_RANK: '你无权修改该成员的职位等级。',
+    NOT_ENOUGH_GOLD: '你的背包中需要拥有30000金币，才可创建公会。',
+    NOT_ALLOWED_GUESTS_JOIN: '访客账号不允许加入公会。',
+    NOT_ALLOWED_GUESTS_CREATE: '访客账号不允许创建公会。'
 } as const;
