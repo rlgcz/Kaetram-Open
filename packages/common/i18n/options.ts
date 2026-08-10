@@ -1,12 +1,13 @@
-import CraftingZhCN from './zh‑CN/crafting';
-import EnchantZhCN from './zh‑CN/enchant';
-import GuildsZhCN from './zh‑CN/guilds';
-import ItemZhCN from './zh‑CN/item';
-import MiscZhCN from './zh‑CN/misc';
-import ResourceZhCN from './zh‑CN/resource';
-import StoreZhCN from './zh‑CN/store';
-import GameZhCN from './zh‑CN/game';
-import WarpsZhCN from './zh‑CN/warps';
+import CraftingZhCN from './zh-CN/crafting';
+import EnchantZhCN from './zh-CN/enchant';
+import GuildsZhCN from './zh-CN/guilds';
+import ItemZhCN from './zh-CN/item';
+import MiscZhCN from './zh-CN/misc';
+import ResourceZhCN from './zh-CN/resource';
+import StoreZhCN from './zh-CN/store';
+import GameZhCN from './zh-CN/game';
+import WarpsZhCN from './zh-CN/warps';
+
 import CraftingEn from './en/crafting';
 import EnchantEn from './en/enchant';
 import GuildsEn from './en/guilds';
@@ -16,6 +17,7 @@ import ResourceEn from './en/resource';
 import StoreEn from './en/store';
 import GameEn from './en/game';
 import WarpsEn from './en/warps';
+
 import CraftingDe from './de/crafting';
 import EnchantDe from './de/enchant';
 import GuildsDe from './de/guilds';
@@ -25,6 +27,7 @@ import ResourceDe from './de/resource';
 import StoreDe from './de/store';
 import GameDe from './de/game';
 import WarpsDe from './de/warps';
+
 import CraftingEs from './es/crafting';
 import EnchantEs from './es/enchant';
 import GuildsEs from './es/guilds';
@@ -34,6 +37,7 @@ import ResourceEs from './es/resource';
 import StoreEs from './es/store';
 import GameEs from './es/game';
 import WarpsEs from './es/warps';
+
 import CraftingFr from './fr/crafting';
 import EnchantFr from './fr/enchant';
 import GuildsFr from './fr/guilds';
@@ -43,6 +47,7 @@ import ResourceFr from './fr/resource';
 import StoreFr from './fr/store';
 import GameFr from './fr/game';
 import WarpsFr from './fr/warps';
+
 import CraftingRo from './ro/crafting';
 import EnchantRo from './ro/enchant';
 import GuildsRo from './ro/guilds';
@@ -52,6 +57,7 @@ import ResourceRo from './ro/resource';
 import StoreRo from './ro/store';
 import GameRo from './ro/game';
 import WarpsRo from './ro/warps';
+
 import CraftingRu from './ru/crafting';
 import EnchantRu from './ru/enchant';
 import GuildsRu from './ru/guilds';
@@ -61,6 +67,7 @@ import ResourceRu from './ru/resource';
 import StoreRu from './ru/store';
 import GameRu from './ru/game';
 import WarpsRu from './ru/warps';
+
 import CraftingPt from './pt/crafting';
 import EnchantPt from './pt/enchant';
 import GuildsPt from './pt/guilds';
@@ -70,6 +77,7 @@ import ResourcePt from './pt/resource';
 import StorePt from './pt/store';
 import GamePt from './pt/game';
 import WarpsPt from './pt/warps';
+
 import CraftingTl from './tl/crafting';
 import EnchantTl from './tl/enchant';
 import GuildsTl from './tl/guilds';
@@ -169,7 +177,7 @@ export let resources = {
         game: GameTl,
         warps: WarpsTl
     },
-    'zh‑CN': {
+    'zh-CN': {
         crafting: CraftingZhCN,
         enchant: EnchantZhCN,
         guilds: GuildsZhCN,
@@ -193,10 +201,10 @@ export let locales: { [K in Locale]: string } = {
     ro: 'ro-RO',
     ru: 'ru-RU',
     tl: 'tl-PH',
-   'zh‑CN': 'zh‑CN'
+    'zh-CN': 'zh-CN'
 } as const;
 
-export let defaultLocale = 'zh‑CN' as const;
+export let defaultLocale = 'zh-CN' as const;
 export let defaultResource = resources[defaultLocale];
 
 export let ns = Object.keys(defaultResource);
