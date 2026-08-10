@@ -27,10 +27,12 @@ let clientHost = config.clientRemoteHost || (config.hubEnabled ? config.hubHost 
 Object.assign(env, {
     version: config.gver,
     minor: config.minor,
-    host: clientHost,
+    host: 'kaetram-open-production-c0f7.up.railway.app',
     port: clientPort,
+    ssl: true,
     hub: config.hubEnabled && hub
 });
+
 
 let plugins = [
     glsl(),
