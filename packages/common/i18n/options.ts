@@ -217,3 +217,18 @@ declare module 'i18next' {
         resources: typeof defaultResource;
     }
 }
+// 游戏设置下拉菜单 语言代码+显示名称
+export const LANGUAGE_LIST: Array<{code: Locale, label: string}> = [
+    { code: 'en', label: 'English' },
+    { code: 'de', label: 'Deutsch' },
+    { code: 'es', label: 'Español' },
+    { code: 'fr', label: 'Français' },
+    { code: 'pt', label: 'Português' },
+    { code: 'ro', label: 'Română' },
+    { code: 'ru', label: 'Русский' },
+    { code: 'tl', label: 'Tagalog' },
+    { code: 'zh-CN', label: '简体中文' }
+];
+
+// 提取纯语言编码数组供循环使用
+export const SUPPORTED_LOCALES = LANGUAGE_LIST.map(item => item.code);
